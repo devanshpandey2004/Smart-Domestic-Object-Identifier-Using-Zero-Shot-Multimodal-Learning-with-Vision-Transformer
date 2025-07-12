@@ -28,6 +28,10 @@ JavaScript (browser TTS)
 Run with Streamlit:
 ```bash  streamlit run your_script_name.py
 
+
+
+
+
 ### Author
 Devansh Pandey
 B.Tech, Electronics & Telecommunication Engineering
