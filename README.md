@@ -27,7 +27,7 @@ Streamlit
 JavaScript (browser TTS)
 
 
-### 🚀 Live Demo (Local)
+### 🚀 Live Demo
 Run with Streamlit:
 https://divyadrishti1.streamlit.app
 
