@@ -24,9 +24,11 @@ Hugging Face Transformers (CLIP)
 Streamlit
 JavaScript (browser TTS)
 
+
 ### 🚀 Live Demo (Local)
 Run with Streamlit:
-```bash  streamlit run your_script_name.py
+```bash
+streamlit run your_script_name.py
 
 
 
