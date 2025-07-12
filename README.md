@@ -9,8 +9,10 @@ This project uses OpenAI’s CLIP (Contrastive Language–Image Pretraining) mod
 - Predicts the most probable object
 - Displays top-5 predictions with confidence
 - Speaks the top prediction using the browser’s voice engine
+###  Zero-Shot Learning in This Project
+This project uses zero-shot learning via OpenAI’s CLIP model to identify household objects without any additional training. By comparing the uploaded image with a set of text labels (like "bottle", "laptop", etc.), the model predicts the object directly — even if it has never seen that exact item before.
 
-💡 Key Features
+### Key Features
 Zero-shot classification
 Vision Transformer-based architecture
 Multimodal input (image + text)
