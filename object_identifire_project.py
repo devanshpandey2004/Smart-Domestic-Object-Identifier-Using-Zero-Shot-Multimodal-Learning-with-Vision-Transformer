@@ -20,16 +20,36 @@ model, processor = load_model()
 
 # ✅ Labels of household objects
 labels = [
-    "Man","women","bed", "table", "highlighter pen", "peanut packet", "plate", "spoon", "knife",
-    "mug", "glass", "bowl", "pan", "kettle", "gas stove", "mop", "bucket", "brush",
-    "detergent packet", "charger", "laptop", "mobile phone", "earphones", "headphones",
-    "iron", "extension board", "speaker", "charging cable", "door", "window", "curtain",
-    "wall", "mirror", "floor", "ceiling", "switchboard", "light switch", "pen",
-    "notebook", "bottle", "bag", "hanger", "basket", "shoe", "slippers", "towel",
-    "pillow", "bedsheet", "blanket", "comb", "toothbrush", "toothpaste", "soap",
-    "shampoo", "scissors", "keys", "lock", "sketch pen", "hair oil bottle", "box",
-    "medicine tablet"
+    # 🧍 People
+    "man", "woman", "boy", "girl", "human",
+
+    # 🛏️ Bedroom & Personal Items
+    "bed", "pillow", "bedsheet", "blanket", "towel", "comb", "mirror",
+    "notebook", "pen", "sketch pen", "bag", "shoe", "slippers", "hanger",
+    "keys", "lock", "basket",
+
+    # 🍽️ Kitchen & Food Items
+    "plate", "spoon", "knife", "mug", "glass", "bowl", "pan",
+    "kettle", "peanut packet", "bottle", "box", "gas stove",
+
+    # 🛁 Toiletries & Health
+    "toothbrush", "toothpaste", "soap", "shampoo", "hair oil bottle", "medicine tablet",
+
+    # 🧹 Cleaning & Utility
+    "mop", "bucket", "brush", "detergent packet", "scrubber", "dustbin",
+
+    # 🔌 Electronics & Accessories
+    "mobile phone", "charger", "charging cable", "laptop", "earphones",
+    "headphones", "iron", "speaker", "extension board", "remote", "television",
+
+    # 🪑 Furniture & Room Fixtures
+    "table", "chair", "door", "window", "curtain", "wall", "floor", "ceiling",
+    "switchboard", "light switch", "desk", "mirror", "mat", "lamp", "clock",
+
+    # ✂️ Stationery & Tools
+    "highlighter pen", "scissors", "paper", "copy", "stapler", "paper clip"
 ]
+
 
 # ✅ Streamlit UI
 st.title("🧠 CLIP Household Object Identifier")
