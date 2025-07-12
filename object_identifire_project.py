@@ -52,7 +52,7 @@ labels = [
 
 
 # ✅ Streamlit UI
-st.title("🧠 CLIP Household Object Identifier")
+st.title("DivyaDrishti:CLIP Household Object Identifier")
 st.markdown("Upload or capture an image, and I will tell you what I see — and say it out loud!")
 
 # Upload or camera input
