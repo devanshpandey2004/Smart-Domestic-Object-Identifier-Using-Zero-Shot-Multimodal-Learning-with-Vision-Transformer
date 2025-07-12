@@ -20,7 +20,7 @@ model, processor = load_model()
 
 # ✅ Labels of household objects
 labels = [
-    "bed", "table", "highlighter pen", "peanut packet", "plate", "spoon", "knife",
+    "Man","women","bed", "table", "highlighter pen", "peanut packet", "plate", "spoon", "knife",
     "mug", "glass", "bowl", "pan", "kettle", "gas stove", "mop", "bucket", "brush",
     "detergent packet", "charger", "laptop", "mobile phone", "earphones", "headphones",
     "iron", "extension board", "speaker", "charging cable", "door", "window", "curtain",
@@ -28,7 +28,7 @@ labels = [
     "notebook", "bottle", "bag", "hanger", "basket", "shoe", "slippers", "towel",
     "pillow", "bedsheet", "blanket", "comb", "toothbrush", "toothpaste", "soap",
     "shampoo", "scissors", "keys", "lock", "sketch pen", "hair oil bottle", "box",
-    "medicine tablet","Man","women"
+    "medicine tablet"
 ]
 
 # ✅ Streamlit UI
