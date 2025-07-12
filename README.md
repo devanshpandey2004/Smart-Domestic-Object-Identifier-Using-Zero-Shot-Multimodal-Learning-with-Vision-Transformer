@@ -32,8 +32,3 @@ Run with Streamlit:
 
 
 
-### Author
-Devansh Pandey
-B.Tech, Electronics & Telecommunication Engineering
-Madhya Pradesh, India
-
