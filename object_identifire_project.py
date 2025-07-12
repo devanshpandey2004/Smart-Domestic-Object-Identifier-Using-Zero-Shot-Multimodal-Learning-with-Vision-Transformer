@@ -28,7 +28,7 @@ labels = [
     "notebook", "bottle", "bag", "hanger", "basket", "shoe", "slippers", "towel",
     "pillow", "bedsheet", "blanket", "comb", "toothbrush", "toothpaste", "soap",
     "shampoo", "scissors", "keys", "lock", "sketch pen", "hair oil bottle", "box",
-    "medicine tablet"
+    "medicine tablet","Man","women"
 ]
 
 # ✅ Streamlit UI
