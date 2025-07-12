@@ -10,9 +10,26 @@ This project uses OpenAI’s CLIP (Contrastive Language–Image Pretraining) mod
 - Displays top-5 predictions with confidence
 - Speaks the top prediction using the browser’s voice engine
 
----
+💡 Key Features
+Zero-shot classification
+Vision Transformer-based architecture
+Multimodal input (image + text)
+Simple web interface using Streamlit
+Speech output via browser (JavaScript)
+
+### Tech Stack
+Python
+PyTorch
+Hugging Face Transformers (CLIP)
+Streamlit
+JavaScript (browser TTS)
 
 ### 🚀 Live Demo (Local)
 Run with Streamlit:
-```bash
-streamlit run your_script_name.py
+```bash  streamlit run your_script_name.py
+
+### Author
+Devansh Pandey
+B.Tech, Electronics & Telecommunication Engineering
+Madhya Pradesh, India
+
