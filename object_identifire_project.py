@@ -20,33 +20,33 @@ model, processor = load_model()
 
 # ✅ Labels of household objects
 labels = [
-    # 🧍 People
+    # People
     "man", "woman", "boy", "girl", "human",
 
-    # 🛏️ Bedroom & Personal Items
+    #  Bedroom & Personal Items
     "bed", "pillow", "bedsheet", "blanket", "towel", "comb", "mirror",
-    "notebook", "pen", "sketch pen", "bag", "shoe", "slippers", "hanger",
+    "notebook", "pen", "sketch pen", "bag", "shoe","slippers", "hanger",
     "keys", "lock", "basket",
 
-    # 🍽️ Kitchen & Food Items
+    #  Kitchen & Food Items
     "plate", "spoon", "knife", "mug", "glass", "bowl", "pan",
     "kettle", "peanut packet", "bottle", "box", "gas stove",
 
-    # 🛁 Toiletries & Health
+    #  Toiletries & Health
     "toothbrush", "toothpaste", "soap", "shampoo", "hair oil bottle", "medicine tablet",
 
-    # 🧹 Cleaning & Utility
+    # Cleaning & Utility
     "mop", "bucket", "brush", "detergent packet", "scrubber", "dustbin",
 
-    # 🔌 Electronics & Accessories
+    #  Electronics & Accessories
     "mobile phone", "charger", "charging cable", "laptop", "earphones",
     "headphones", "iron", "speaker", "extension board", "remote", "television",
 
-    # 🪑 Furniture & Room Fixtures
+    #  Furniture & Room Fixtures
     "table", "chair", "door", "window", "curtain", "wall", "floor", "ceiling",
     "switchboard", "light switch", "desk", "mirror", "mat", "lamp", "clock",
 
-    # ✂️ Stationery & Tools
+    #  Stationery & Tools
     "highlighter pen", "scissors", "paper", "copy", "stapler", "paper clip"
 ]
 
@@ -56,8 +56,8 @@ st.title("DivyaDrishti:CLIP Household Object Identifier")
 st.markdown("Upload or capture an image, and I will tell you what I see — and say it out loud!")
 
 # Upload or camera input
-image_data = st.file_uploader("📤 Upload an image", type=["png", "jpg", "jpeg"])
-camera_data = st.camera_input("📸 Or take a photo using your webcam")
+image_data = st.file_uploader(" Upload an image", type=["png", "jpg", "jpeg"])
+camera_data = st.camera_input(" Or take a photo using your webcam")
 
 # Use camera image if both given
 if camera_data:
@@ -82,7 +82,7 @@ if image:
         confidence = probs[top_idx].item() * 100
 
         # Display result
-        st.success(f"✅ I think it's a **{top_label}** ({confidence:.2f}%)")
+        st.success(f"I think it's a **{top_label}** ({confidence:.2f}%)")
 
         # Top-5 predictions
         top5_probs, top5_indices = torch.topk(probs, 5)
@@ -92,7 +92,7 @@ if image:
             prob = top5_probs[i].item() * 100
             st.write(f"{i+1}. {label} ({prob:.2f}%)")
 
-        # ✅ Speak result using browser
+        # Speak result using browser
         st.components.v1.html(f"""
             <script>
                 var msg = new SpeechSynthesisUtterance("I think it's a {top_label}");
